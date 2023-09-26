@@ -1,9 +1,18 @@
-import React from 'react'
+/** @format */
 
-const FormInput = () => {
+const FormInput = ({ label, name, type, defaultValue }) => {
   return (
-    <div>FormInput</div>
-  )
-}
-
-export default FormInput
+    <div className="form-control ">
+      <label className="label">
+        <span className="label-text capitalize">{label}</span>
+      </label>
+      <input
+        type={type}
+        name={name}
+        defaultValue={defaultValue}
+        className="input input-bordered "
+      />
+    </div>
+  );
+};
+export default FormInput;

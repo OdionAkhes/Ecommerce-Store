@@ -13,10 +13,13 @@ import {
   Checkout,
   Orders,
 } from "./pages";
+import {
+  FormInput
+} from "./components"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeLayout />,
+    element: <Login/>,
     errorElement: <Error />,
     children: [
       {

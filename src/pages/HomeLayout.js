@@ -4,7 +4,9 @@ const HomeLayout = () => {
   return (
     <nav>
       <span className="text-4xl text-primary" >Style Loft</span>
-      <Outlet/>
+      <section className="align-element">
+        <Outlet/>
+</section>
 </nav>
   )
 }
